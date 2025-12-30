@@ -1,3 +1,4 @@
+
 # ruff: noqa
 # black: skip
 # mypy: ignore-errors
@@ -15,24 +16,22 @@ class PromptFactory(PromptFactoryBase):
     """
 
     def create_onboarding_prompt(self, *, system: Any) -> str:
-        return self._render_prompt("onboarding_prompt", locals())
+        return self._render_prompt('onboarding_prompt', locals())
 
     def create_think_about_collected_information(self) -> str:
-        return self._render_prompt("think_about_collected_information", locals())
+        return self._render_prompt('think_about_collected_information', locals())
 
     def create_think_about_task_adherence(self) -> str:
-        return self._render_prompt("think_about_task_adherence", locals())
+        return self._render_prompt('think_about_task_adherence', locals())
 
     def create_think_about_whether_you_are_done(self) -> str:
-        return self._render_prompt("think_about_whether_you_are_done", locals())
+        return self._render_prompt('think_about_whether_you_are_done', locals())
 
     def create_summarize_changes(self) -> str:
-        return self._render_prompt("summarize_changes", locals())
+        return self._render_prompt('summarize_changes', locals())
 
     def create_prepare_for_new_conversation(self) -> str:
-        return self._render_prompt("prepare_for_new_conversation", locals())
+        return self._render_prompt('prepare_for_new_conversation', locals())
 
-    def create_system_prompt(
-        self, *, available_markers: Any, available_tools: Any, context_system_prompt: Any, mode_system_prompts: Any
-    ) -> str:
-        return self._render_prompt("system_prompt", locals())
+    def create_system_prompt(self, *, available_markers: Any, available_tools: Any, context_system_prompt: Any, mode_system_prompts: Any) -> str:
+        return self._render_prompt('system_prompt', locals())
